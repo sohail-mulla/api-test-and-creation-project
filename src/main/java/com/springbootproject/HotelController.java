@@ -19,10 +19,10 @@ public class HotelController {
 	
 	@GetMapping("/amenities")
 	public String amenities() {
-		return "🏊 Rooftop Infinity Pool (6 AM - 10 PM) | " + "💆 Spa & Wellness Center | "
-				+ "🏋 24x7 Fitness Center | " + "🍽 3 Restaurants & 2 Bars | " + "🚗 Valet Parking | "
-				+ "📶 High-Speed WiFi throughout | " + "🧺 Laundry & Dry Cleaning | " + "🛎 24x7 Room Service | "
-				+ "💼 Business Center & Conference Halls.";
+		return " Rooftop Infinity Pool (6 AM - 10 PM) | " + " Spa & Wellness Center | "
+				+ " 24x7 Fitness Center | " + " 3 Restaurants & 2 Bars | " + " Valet Parking | "
+				+ " High-Speed WiFi throughout | " + " Laundry & Dry Cleaning | " + " 24x7 Room Service | "
+				+ " Business Center & Conference Halls.";
 	}
 	
 
@@ -42,13 +42,13 @@ public class HotelController {
 
 	@GetMapping("/contact")
 	public String contact() {
-		return "📞 Phone: +91-22-4567-8900 | " + "📧 Email: reservations@grandhorizon.com | "
-				+ "🌐 Website: www.grandhorizon.com | " + "⏰ Front Desk: Open 24x7";
+		return " Phone: +91-22-4567-8900 | " + " Email: reservations@grandhorizon.com | "
+				+ " Website: www.grandhorizon.com | " + " Front Desk: Open 24x7";
 	}
 
 	@GetMapping("/checkin-checkout")
 	public String checkInOut() {
-		return "✅ Check-in Time: 12:00 PM (Noon) | " + "🚪 Check-out Time: 11:00 AM | "
+		return " Check-in Time: 12:00 PM (Noon) | " + " Check-out Time: 11:00 AM | "
 				+ "Early check-in and late check-out available on request (subject to availability). "
 				+ "Extra charges may apply for late check-out beyond 6:00 PM.";
 	}
@@ -65,7 +65,7 @@ public class HotelController {
 	
 	@GetMapping("/dining")
 	public String dining() {
-		return "🍽 Dining Options at Grand Horizon:\n"
+		return " Dining Options at Grand Horizon:\n"
 				+ "1. The Horizon Grill     - Multi-cuisine restaurant | Open: 7AM - 11PM\n"
 				+ "2. Spice Garden          - Authentic Indian cuisine | Open: 12PM - 11PM\n"
 				+ "3. Sakura                - Japanese & Asian fusion | Open: 7PM - 11PM\n"
@@ -75,10 +75,10 @@ public class HotelController {
 
 	@GetMapping("/spa")
 	public String spa() {
-		return "💆 Serenity Spa & Wellness at Grand Horizon:\n"
+		return " Serenity Spa & Wellness at Grand Horizon:\n"
 				+ "Services: Swedish Massage, Deep Tissue Massage, Ayurvedic Treatments, "
-				+ "Facial Therapies, Body Wraps, Aromatherapy.\n" + "⏰ Timings: 8:00 AM - 9:00 PM (All days)\n"
-				+ "📍 Location: 2nd Floor, East Wing\n"
+				+ "Facial Therapies, Body Wraps, Aromatherapy.\n" + " Timings: 8:00 AM - 9:00 PM (All days)\n"
+				+ " Location: 2nd Floor, East Wing\n"
 				+ "Prior appointment recommended. Hotel guests get 15% discount.";
 	}
 
@@ -93,7 +93,7 @@ public class HotelController {
 
 	@GetMapping("/offers")
 	public String offers() {
-		return "🎉 Current Offers & Packages:\n" + "1. Weekend Getaway    - 2 nights + breakfast + spa = ₹18,000\n"
+		return " Current Offers & Packages:\n" + "1. Weekend Getaway    - 2 nights + breakfast + spa = ₹18,000\n"
 				+ "2. Honeymoon Package  - 3 nights + candlelight dinner + room decor = ₹35,000\n"
 				+ "3. Corporate Package  - Room + conference room + lunch = ₹9,500/day\n"
 				+ "4. Early Bird Offer   - Book 30 days in advance = Flat 20% off\n"
@@ -104,21 +104,21 @@ public class HotelController {
 
 	@PostMapping("/book-room")
 	public String bookRoom() {
-		return "🎊 Room Booking Confirmed!\n" + "Your reservation at The Grand Horizon has been successfully placed. "
+		return " Room Booking Confirmed!\n" + "Your reservation at The Grand Horizon has been successfully placed. "
 				+ "A confirmation email will be sent to your registered email address within 10 minutes. "
 				+ "Booking ID: GH-2024-78432. Please carry a valid ID proof at check-in.";
 	}
 
 	@PostMapping("/book-spa")
 	public String bookSpa() {
-		return "💆 Spa Appointment Confirmed!\n" + "Your spa session at Serenity Spa has been booked. "
+		return " Spa Appointment Confirmed!\n" + "Your spa session at Serenity Spa has been booked. "
 				+ "Please arrive 10 minutes early. " + "Appointment ID: SPA-2024-3821. "
 				+ "Cancellation must be done at least 4 hours in advance to avoid charges.";
 	}
 
 	@PostMapping("/book-banquet")
 	public String bookBanquet() {
-		return "🎉 Banquet Hall Booking Confirmed!\n"
+		return " Banquet Hall Booking Confirmed!\n"
 				+ "The Grand Ballroom (capacity: 500 guests) has been reserved for your event. "
 				+ "Our events team will contact you within 24 hours to discuss catering, "
 				+ "decor, and AV requirements. Booking Ref: BNQ-2024-1045.";
@@ -134,7 +134,7 @@ public class HotelController {
 
 	@PostMapping("/loyalty-register")
 	public String loyaltyRegister() {
-		return "⭐ Welcome to Grand Horizon Loyalty Program!\n"
+		return " Welcome to Grand Horizon Loyalty Program!\n"
 				+ "You have been successfully enrolled in our exclusive loyalty program. "
 				+ "You will earn 10 points for every ₹1,000 spent. "
 				+ "Redeem points for free nights, spa sessions, and dining. " + "Your Loyalty ID: LYL-2024-GH-5591.";
@@ -144,14 +144,14 @@ public class HotelController {
 
 	@PutMapping("/update-booking")
 	public String updateBooking() {
-		return "✏️ Booking Updated Successfully!\n" + "Your reservation details have been modified as requested. "
+		return " Booking Updated Successfully!\n" + "Your reservation details have been modified as requested. "
 				+ "Updated confirmation has been sent to your email. "
 				+ "If you need further changes, please contact us at least 24 hours before check-in.";
 	}
 
 	@PutMapping("/update-contact")
 	public String updateContact() {
-		return "📝 Contact Details Updated!\n"
+		return " Contact Details Updated!\n"
 				+ "Your profile contact information has been successfully updated in our system. "
 				+ "If you did not request this change, please call our front desk immediately at +91-22-4567-8900.";
 	}
@@ -160,7 +160,7 @@ public class HotelController {
 
 	@PatchMapping("/upgrade-room")
 	public String upgradeRoom() {
-		return "🌟 Room Upgrade Applied!\n"
+		return " Room Upgrade Applied!\n"
 				+ "Congratulations! Your room has been upgraded to the next category as per your request "
 				+ "and subject to availability. Upgraded room details will be provided at check-in. "
 				+ "Complimentary upgrade applied for loyalty members!";
@@ -171,7 +171,7 @@ public class HotelController {
 	
 	@DeleteMapping("/cancel-spa")
 	public String cancelSpa() {
-		return "❌ Spa Appointment Cancelled.\n" + "Your spa booking has been cancelled successfully. "
+		return " Spa Appointment Cancelled.\n" + "Your spa booking has been cancelled successfully. "
 				+ "Since cancellation was made more than 4 hours in advance, no charges apply. "
 				+ "Feel free to rebook at your convenience.";
 	}
